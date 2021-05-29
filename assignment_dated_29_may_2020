@@ -1,0 +1,7 @@
+list = []
+list = range(1,11)
+var = int(input("Enter a variable:"))
+if var in list:
+    print('Variable is between 1 and 10.')
+else:
+    print('Variable is not in between 1 and 10.')
