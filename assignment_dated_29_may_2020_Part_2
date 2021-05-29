@@ -1,0 +1,11 @@
+#Program to print each individual digits in the form of words of the input number.
+
+dict = {1:'One',2:'Two',3:'Three',4:'Four',5:'Five',6:'Six',7:'Seven',8:'Eight', 9:'Nine',0:'Zero'}
+num = int(input('Enter the number:'))
+list = []
+temp = num
+while temp!=0:
+    list.append(temp%10)
+    temp = temp//10
+for i in range(len(list)-1,-1,-1):
+    print(dict.get(list[i]))
