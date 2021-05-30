@@ -1,0 +1,13 @@
+''' WAP to print the following pattern:
+*
+* *
+* * *
+* * * *
+* * * * *
+upto n times.'''
+#CODE----------------------------------------
+n=int(input('Enter N value:'))
+for i in range(n):
+    for j in range(i):
+        print('*', end = ' ')
+    print("")
